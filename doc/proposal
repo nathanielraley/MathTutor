@@ -1,0 +1,83 @@
+Nathaniel Raley
+Project Proposal			
+10/31/2014
+
+Before I begin my project description, I want to give a 
+little background information about myself and my research 
+interests to help justify my choice of topic. I am a 
+graduate student from the Department of Educational 
+Psychology; I am the only student in this class from a 
+social sciences discipline and I do not have the same 
+mathematics/physics background as other students seem to. 
+Thus, my project does not have anything to do with the 
+natural or physical sciences, and I will be completing the 
+project by myself. My ultimate aim as a researcher is to 
+optimize student learning in the classroom (minimizing the 
+amount of  class time it takes a student master a given 
+subject), and to this end computers are an invaluable tool; 
+they can be used to assess student understanding, to match 
+students with instructional content based on the students' 
+prior knowledge and motivation, to chart the trajectory of 
+learning in real time, to gather pedagogically relevant 
+information from students (time spent on question, hints 
+requested, click-stream data, eye-tracking, etc.), and to 
+use all of the above to alter the content-delivery to 
+increase engagement and maximize learning outcomes.
+	My goal for this project to create a basic adaptive 
+tutoring program with which to teach number sense skills to 
+children. I am a former substitute teacher and I have worked 
+as a math tutor for 3+ years; I want to implement my own 
+approaches to teaching elementary arithmetic. The program 
+would be command-line based and very I/O heavy; it would 
+take input from the user and model the probability that the 
+user has learned certain concepts using Bayesian networks 
+and/or maximum-likelihood estimation. The program will have 
+~10 levels that will teach foundational skills for thinking 
+about numbers and basic arithmetical operations. It will 
+keep track of (1) how much time a student spends on a 
+question, (2) percentage correct with each level, (3) number 
+of hints requested, and (4) time since student last saw a 
+question of a given type. It will randomly generate numbers 
+for each problem and gradually increase in difficulty within 
+each level. An initial timed arithmetic quiz will provide 
+the priors for the bayesian updates. Immediate feedback will 
+be given after a student answers each question. It will have 
+the ability to accommodate multiple users and track their 
+progress individually. 
+I want to be able to generate graphics to show the student's 
+progress also, and I will do this by piping statistics to 
+gnuplot upon request.
+	Ideally, the program  will be able to represent 
+“domain knowledge” (e.g., idealsolutions of all problems in 
+the subject area) and “student knowledge” (e.g., the extent 
+to which a student is able to solve problems in a given 
+domain, the performance of past students, possible 
+misconceptions, time spent on problems, hints requented, 
+number of errors); the system can then provide instruction 
+or other educational feedback based on these 
+representations, and modify them according to student input. 
+These will be based on the Common Core standards and will 
+include doubles (7+7=14), doubles plus/minus one (7+8=15), 
+working with 10 (10+7=17), combinations that make 10 (7+3, 
+6+4), how far apart two numbers are (9 and 2 are 7 apart), 
+how to cross over 10 when adding or subtracting, and other 
+composite skills. It will begin with single digits for each 
+skill and gradually transition to double digits in each 
+skill. When a student has mastered a skill (by reaching a 
+mastery criterion), they will advance to the next level; 
+however, I want to exploit the effects of spaced repetition 
+in this program, so even when kids have advanced to the next 
+level, the program will occasionally generate questions from 
+previously mastered skills (based on the amount of time 
+since they last saw the question) to ensure that the student 
+has not forgotten them. 
+	My preferred language is C, but because this project 
+is very I/O-based, I will be completing it in C++.  Today I 
+built a basic arithmetic tutor (with none of the bells and 
+whistles) as a proof of concept and it appears to work 
+correctly, randomly generating arithmetic problems (+,-,*,/) 
+and giving right/wrong feedback. I am not extremely familiar 
+with C++, but I have read a few tutorials and besides the 
+stream it seams very similar to C and I have not yet 
+encountered any difficulties. Thanks!
+
