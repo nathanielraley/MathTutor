@@ -1,8 +1,8 @@
 # README #
 
-Repository for STC 2014 Project
-NumberLand Arithmetic Tutor
-Nathaniel Raley
+Repository for STC 2014 Project | 
+ NumberLand Arithmetic Tutor | 
+ Nathaniel Raley
 
 ### Contents ###
 
